@@ -118,8 +118,8 @@ void BinaryTreeLnk<Data>::createTree(NodeLnk* node, int i, const LinearContainer
 	        node->right_son = new NodeLnk(arr[2 * i + 2]);
 	        createTree(node->right_son, 2 * i + 2, arr);
 	    }
-	  }
 	}
+}
 
 template<typename Data>
 BinaryTreeLnk<Data>& BinaryTreeLnk<Data>::operator=(const BinaryTreeLnk<Data>& tree){
